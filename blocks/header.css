@@ -2,7 +2,6 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0;
-    
     display: flex;
     justify-content: center;
     align-items: top;
@@ -10,7 +9,7 @@
 }
 
 .header__logo {
-    margin: 34px auto 0;
+    margin: 34px auto 91px;
     height: 70px;
         
 }
@@ -18,7 +17,7 @@
 @media screen and (max-width: 320px)
 {
     .header__logo {
-        margin: 20px auto 0;
+        margin: 20px auto 51px;
         height: 51.85px;
         }
 }
