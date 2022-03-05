@@ -1,0 +1,20 @@
+.lead {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  margin: 0;
+  padding: 0;
+}
+
+.lead__heading {
+  font-family: "Inter", sans-serif, serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 96px;
+  line-height: 100px;
+  text-align: center;
+  width: 793px;
+  height: 200px;
+  text-rendering: optimizeLegibility;
+  margin: 0;
+}
