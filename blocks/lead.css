@@ -28,9 +28,11 @@
 }
 
 .lead__image {
-  padding-bottom: calc(984px / 615px * 100%);
-  margin: 0 auto;
+  padding-bottom: calc((615 / 984) * 100%);
+  margin: 0 auto 92px;
   width: calc(100% - (148px * 2));
+  display: block;
+  
 }
 
 @media screen and (max-width: 768px) {
@@ -42,6 +44,11 @@
   .lead__subheading {
     width: calc(100% - 48px);
     margin: 0 auto 36px;
+  }
+
+  .lead__image {
+    margin: 0 0 88px;
+    width: 100%;
   }
 }
 
@@ -58,5 +65,9 @@
     margin: 0 auto 40px;
     font-size: 16px;
     line-height: 20px;
+  }
+  .lead__image {
+    margin: 0 0 64px;
+    width: 100%;
   }
 }
