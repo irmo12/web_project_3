@@ -1,0 +1,60 @@
+.intro {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.intro__heading {
+  text-rendering: optimizeLegibility;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 54px;
+  line-height: 107%;
+  margin: 0 20% 40px 11.5%;
+  width: calc(100% - 20% - 11.5%);
+  
+}
+
+.intro__quote {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 142%;
+  margin: 0 32.19% 10px 11.5625%;
+  width: 56.25%;
+  
+}
+
+.intro__cite {
+  text-align: right;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 142%;
+  width: 56.25%;
+  margin: 0 32.19% 32px 11.5625%;
+}
+
+.intro__description {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 163%;
+  width: 56.25%;
+  margin: 0 32.19% 0 11.5625%;
+}
+
+@media screen and (max-width: 770px)
+{
+  .intro__heading, .intro__quote, .intro__cite, .intro__description {
+    margin-left: 24px;
+    margin-right: 24px;
+    max-width: 720px;
+    width: auto;
+   
+  }
+}

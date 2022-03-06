@@ -1,7 +1,7 @@
 .lead {
   margin: 0;
   padding: 0;
-  min-height: 60vh;
+ 
 }
 
 .lead__heading {
@@ -28,9 +28,8 @@
 }
 
 .lead__image {
-  padding-bottom: calc((615 / 984) * 100%);
   margin: 0 auto 92px;
-  width: calc(100% - (148px * 2));
+  width: calc(100% - (.115625 * 2));
   display: block;
   
 }
