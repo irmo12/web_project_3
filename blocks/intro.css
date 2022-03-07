@@ -48,8 +48,34 @@
   margin: 0 32.19% 0 11.5625%;
 }
 
-@media screen and (max-width: 770px)
+@media all and (max-width: 320px)
 {
+  .intro__cite, .intro__description {
+    margin-left: 16px;
+    margin-right: 16px;
+    max-width: 320;
+    width: auto;
+  }
+
+  .intro__heading {
+    font-size: 32px;
+    line-height: 35px;
+    margin-left: 16px;
+    margin-right: 16px;
+    max-width: 320;
+    width: auto;
+  }
+
+  .intro__quote {
+    line-height: 30px;
+    margin-left: 16px;
+    margin-right: 16px;
+    max-width: 320;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .intro__heading, .intro__quote, .intro__cite, .intro__description {
     margin-left: 24px;
     margin-right: 24px;
@@ -58,3 +84,5 @@
    
   }
 }
+
+
