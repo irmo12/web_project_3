@@ -34,10 +34,11 @@
   
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 545px) {
   .lead__heading {
-    width: calc(100% - 48px);
-    margin: 0 auto 32px;
+    width: calc(100% - 6.25%);
+    margin: 0 auto 6.25%;
+  
   }
 
   .lead__subheading {
@@ -48,6 +49,13 @@
   .lead__image {
     margin: 0 0 88px;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 544px) and (min-width: 321px) {
+  .lead__heading {
+    font-size: 68px;
+    line-height: 76px;
   }
 }
 

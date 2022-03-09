@@ -53,7 +53,7 @@
   .intro__cite, .intro__description {
     margin-left: 16px;
     margin-right: 16px;
-    max-width: 320;
+    max-width: 288px;
     width: auto;
   }
 
@@ -62,7 +62,7 @@
     line-height: 35px;
     margin-left: 16px;
     margin-right: 16px;
-    max-width: 320;
+    max-width: 288px;
     width: auto;
   }
 
@@ -70,12 +70,12 @@
     line-height: 30px;
     margin-left: 16px;
     margin-right: 16px;
-    max-width: 320;
+    max-width: 288px;
     width: auto;
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 321px) {
   .intro__heading, .intro__quote, .intro__cite, .intro__description {
     margin-left: 24px;
     margin-right: 24px;
