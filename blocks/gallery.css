@@ -5,6 +5,8 @@
     column-gap: 16px;
     margin: 9.22% 3.75% 7.19%;
     justify-content: stretch;
+    justify-items: center;
+
 }
 
 .gallery__img {

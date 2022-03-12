@@ -9,7 +9,7 @@
   font-style: normal;
   font-weight: 900;
   font-size: 96px;
-  line-height: 104%;
+  line-height: 1.04;
   text-align: center;
   text-rendering: optimizeLegibility;
   margin: 0 auto 32px;
@@ -21,7 +21,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   text-align: center;
   margin: 0 auto 64px;
   max-width: 720px;
@@ -55,7 +55,7 @@
 @media screen and (max-width: 544px) and (min-width: 321px) {
   .lead__heading {
     font-size: 68px;
-    line-height: 76px;
+    line-height: 1.12;
   }
 }
 
@@ -64,7 +64,7 @@
     width: calc(100% - 32px);
     margin: 0 auto 16px;
     font-size: 40px;
-    line-height: 44px;
+    line-height: 1.1;
   }
 
   .lead__subheading {
