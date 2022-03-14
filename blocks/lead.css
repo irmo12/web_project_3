@@ -31,24 +31,25 @@
   margin: 0 auto 92px;
   width: calc(100% - (.115625 * 2));
   display: block;
+  width: 100%;
   
 }
 
 @media screen and (max-width: 768px) and (min-width: 545px) {
   .lead__heading {
-    width: calc(100% - 6.25%);
+    max-width: calc(100% - 6.25%);
     margin: 0 auto 6.25%;
   
   }
 
   .lead__subheading {
-    width: calc(100% - 48px);
+    max-width: calc(100% - 48px);
     margin: 0 auto 36px;
   }
 
   .lead__image {
     margin: 0 0 88px;
-    width: 100%;
+    max-width: 100%;
   }
 }
 
@@ -61,14 +62,14 @@
 
 @media screen and (max-width: 320px) {
   .lead__heading {
-    width: calc(100% - 32px);
+    max-width: calc(100% - 32px);
     margin: 0 auto 16px;
     font-size: 40px;
     line-height: 1.1;
   }
 
   .lead__subheading {
-    width: calc(100% - 32px);
+    max-width: calc(100% - 32px);
     margin: 0 auto 40px;
     font-size: 16px;
     line-height: 20px;
