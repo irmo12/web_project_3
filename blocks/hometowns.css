@@ -1,15 +1,19 @@
 .hometowns {
   max-width: calc(100% - (2 * 100px));
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 
 .hometowns__article {
   margin: 0 auto;
   display: grid;
   width: 100%;
-  grid-gap: 48px 40px;
-  grid-template-columns: 1fr 1.3fr;
-  grid-auto-rows: auto auto 1fr;
+  grid-gap: 0 40px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(46px, auto) repeat(4, minmax(48px, min-content));
+  grid-auto-rows: min-content;
   justify-content: center;
   align-items: baseline;
   
@@ -24,6 +28,7 @@
   margin: 0;
   align-self: end;
   grid-column: 1;
+  margin-bottom: 48px;
 }
 
 .hometowns__link {
@@ -33,6 +38,7 @@
   align-self: end;
   grid-area: "link";
   grid-column: 2;
+  margin-bottom: 48px;
 }
 
 .hometowns__artist-heading {
@@ -65,8 +71,10 @@
 }
 .hometowns__img {
   object-fit: cover;
+  max-width: 100%;
+  height: auto;
   grid-column: 1;
-  grid-row: 2/3;
+  grid-row: 2 / span 2;
 }
 
 .hometowns__paragraph {
@@ -77,7 +85,10 @@
   line-height: 1.63;
   margin: 0;
   grid-column: 2;
-  grid-row: -1;
+}
+
+.hometowns__paragraph:first-of-type {
+  margin: 0;
 }
 
 .hometowns__button {
@@ -92,15 +103,18 @@
   font-size: 18px;
   line-height: 1.22;
   justify-self: start;
-  align-self: start;
+  align-self: end;
   padding: 13px 20px;
   text-align: center;
   grid-column: 1;
+  grid-row: 5;
 }
 
 .hometowns__button:hover {
   background: #0063d2;
 }
+
+
 
 @media all and (max-width: 320px) {
   .hometowns__button {
@@ -108,12 +122,31 @@
   }
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1000px) {
+  .hometowns {
+    max-width: 100%;
+    margin: 0 3%;
+  }
   .hometowns__title {
     font-family: "Inter", Arial, sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 42px;
     line-height: 1.1;
+    margin-bottom: 46px;
+  }
+
+  .hometowns__link {
+    margin-bottom: 46px;
+  }
+
+  .hometowns__paragraph {
+    font-size: 16px;
+  }
+
+  .hometowns__button {
+    grid-row: 3;
+    align-self: end;
+    margin-top: 10%;
   }
 }
