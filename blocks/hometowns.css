@@ -12,11 +12,10 @@
   width: 100%;
   grid-gap: 0 40px;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: minmax(46px, auto) repeat(4, minmax(48px, min-content));
+  grid-template-rows: minmax(46px, auto) repeat(3, minmax(48px, min-content));
   grid-auto-rows: min-content;
   justify-content: center;
   align-items: baseline;
-  
 }
 
 .hometowns__title {
@@ -36,9 +35,12 @@
   grid-column: 3;
   grid-row: 1;
   align-self: end;
-  grid-area: "link";
   grid-column: 2;
   margin-bottom: 48px;
+  display: flex;
+  flex-flow:  column nowrap;
+  justify-content: space-between;
+
 }
 
 .hometowns__artist-heading {
@@ -50,7 +52,6 @@
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: #aaa;
-  margin-bottom: 8px;
 }
 
 .hometowns__artist-name {
@@ -68,7 +69,11 @@
   display: flex;
   flex-direction: column;
   gap: 25px;
+  grid-column: 2;
+  grid-row: -1;
+  grid-area: span 3;
 }
+
 .hometowns__img {
   object-fit: cover;
   max-width: 100%;
@@ -84,11 +89,7 @@
   font-size: 18px;
   line-height: 1.63;
   margin: 0;
-  grid-column: 2;
-}
-
-.hometowns__paragraph:first-of-type {
-  margin: 0;
+  
 }
 
 .hometowns__button {
@@ -102,18 +103,28 @@
   font-weight: 600;
   font-size: 18px;
   line-height: 1.22;
-  justify-self: start;
-  align-self: end;
-  padding: 13px 20px;
+   padding: 13px 20px;
   text-align: center;
-  grid-column: 1;
-  grid-row: 5;
+  transition: background-color .7s ease-out;
 }
 
 .hometowns__button:hover {
   background: #0063d2;
+ }
+
+.hometowns__button-link {
+  text-decoration: none;
+  justify-self: start;
+  align-self: end;
+  grid-column: 1;
+  grid-row: -1;
+  
 }
 
+.hometowns__button-link-long-text {
+  grid-row: 4;
+  align-self: start;
+}
 
 
 @media all and (max-width: 320px) {
@@ -142,11 +153,46 @@
 
   .hometowns__paragraph {
     font-size: 16px;
+  } 
+}
+
+@media all and (max-width: 700px) {
+  .hometowns {
+    margin: 0;
   }
 
-  .hometowns__button {
-    grid-row: 3;
-    align-self: end;
-    margin-top: 10%;
+  .hometowns__article {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 25px;
+  }
+
+  .hometowns__title {
+    font-size: 32px;
+    line-height: 35px;
+    align-self: flex-start;
+    margin: 0 16px 5px;
+  }
+
+  .hometowns__link {
+    align-self: flex-start;
+    margin: 0 16px 5px;
+  }
+
+  .hometowns__paragraph {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .hometowns__button-link, .hometowns__button-link-long-text {
+    align-self: center;
+    margin: 5px 0 0;
+    padding: 13px 40px;
+  }
+
+  .hometowns__img {
+    margin-bottom: 5px;
+    width: 100%;
   }
 }

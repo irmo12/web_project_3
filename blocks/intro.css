@@ -1,7 +1,6 @@
 .intro {
   margin: 0;
   padding: 0;
-  
 }
 
 .intro__heading {
@@ -13,7 +12,6 @@
   line-height: 1.07;
   margin: 0 20% 40px 11.5%;
   width: calc(100% - 20% - 11.5%);
-  
 }
 
 .intro__quote {
@@ -24,7 +22,6 @@
   line-height: 1.42;
   margin: 0 32.19% 10px 11.5625%;
   width: 56.25%;
-  
 }
 
 .intro__cite {
@@ -34,7 +31,7 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 1.42;
- /* width: 56.25%;*/
+
   margin: 0 32.19% 32px 11.5625%;
 }
 
@@ -44,13 +41,13 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 1.63;
- /* width: 56.25%;*/
+
   margin: 0 32.19% 0 11.5625%;
 }
 
-@media all and (max-width: 320px)
-{
-  .intro__cite, .intro__description {
+@media all and (max-width: 320px) {
+  .intro__cite,
+  .intro__description {
     margin-left: 16px;
     margin-right: 16px;
     max-width: 288px;
@@ -62,8 +59,7 @@
     line-height: 1.1;
     margin-left: 16px;
     margin-right: 16px;
-    max-width: 288px;
-    width: auto;
+    width: 288px;
   }
 
   .intro__quote {
@@ -76,13 +72,13 @@
 }
 
 @media screen and (max-width: 768px) and (min-width: 321px) {
-  .intro__heading, .intro__quote, .intro__cite, .intro__description {
+  .intro__heading,
+  .intro__quote,
+  .intro__cite,
+  .intro__description {
     margin-left: 24px;
     margin-right: 24px;
     max-width: 720px;
     width: auto;
-   
   }
 }
-
-

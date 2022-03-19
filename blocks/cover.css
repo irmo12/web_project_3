@@ -1,0 +1,57 @@
+.cover {
+  margin: 92px auto 92px;
+  max-width: 1184px;
+  height: 740px;
+  background-image: url(../images/visit.png);
+  opacity: 0.3;
+  background-position: center;
+  background-size: auto;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 0;
+}
+
+.cover__content {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  max-width: fit-content;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+}
+
+.cover__heading {
+  margin: 0;
+  font-weight: 900;
+  font-size: 72px;
+  line-height: 1.06;
+  text-align: center;
+  z-index: 2;
+}
+
+.cover__details {
+  margin: 0;
+  max-width: 280px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.cover__button {
+  background: #0278fe;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+}

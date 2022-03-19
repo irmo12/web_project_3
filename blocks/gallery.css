@@ -5,7 +5,7 @@
   column-gap: 16px;
   justify-content: stretch;
   justify-items: center;
-  width: 100%;
+  max-width: 100%;
   margin: 10% auto 7.75%;
 }
 
@@ -31,14 +31,16 @@
 
 @media all and (max-width: 719px) {
   .gallery {
-   display: flex;
-   align-items: center;
-   flex-direction: column;
-   flex-wrap: nowrap;
-   margin-top: 90px;
-   margin-bottom: 89px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-top: 90px;
+    margin-bottom: 89px;
+  }
 }
-
 @media all and (max-width: 320px) {
-  .gallery {margin-bottom: 62px;}
+  .gallery {
+    margin: 90px 16px 62px;
+  }
 }
