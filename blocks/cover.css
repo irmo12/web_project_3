@@ -90,6 +90,7 @@
 @media all and (max-width: 600px) {
   .cover {
     height: 254px;
+    margin: 64px 0;
   }
 
   .cover__content {
@@ -107,4 +108,5 @@
     line-height: 1.14;
     width: 56%;
   }
+
 }
