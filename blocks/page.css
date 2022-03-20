@@ -1,10 +1,12 @@
 .page {
   margin: 0 auto;
-  background: #2A2C2F;
+  background: #2a2c2f;
   color: #fff;
-  height: 100%;
+  min-width: 100vh;
   width: 100%;
   max-width: 1184px;
+  min-width: 320px;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
