@@ -1,7 +1,6 @@
 .lead {
   margin: 0;
   padding: 0;
- 
 }
 
 .lead__heading {
@@ -29,17 +28,14 @@
 
 .lead__image {
   margin: 0 auto 92px;
-  width: calc(100% - (.115625 * 2));
   display: block;
   width: 100%;
-  
 }
 
 @media screen and (max-width: 768px) and (min-width: 545px) {
   .lead__heading {
     max-width: calc(100% - 6.25%);
     margin: 0 auto 6.25%;
-  
   }
 
   .lead__subheading {
