@@ -19,10 +19,7 @@
     "hdg lnk"
     "img txt"
     "img txt"
-    ".   txt"
-    "btn txt"
-    ".   txt"
-    ".   txt";
+    "btn txt";
   justify-content: center;
   align-items: baseline;
 }
@@ -119,6 +116,25 @@
     max-width: 100%;
     margin: 0 3%;
   }
+
+  .hometowns__article-long {
+    grid-template-areas:
+    "hdg lnk"
+    "img txt"
+    "img txt"
+    ".   txt"
+    "btn txt"
+    ".   txt"
+    ".   txt";
+  }
+
+  .hometowns__article-short {
+    grid-template-areas: 
+    "hdg lnk"
+    "img txt"
+    "btn txt";
+  }
+
   .hometowns__title {
     font-size: 42px;
     line-height: 1.1;
