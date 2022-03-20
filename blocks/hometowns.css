@@ -19,6 +19,7 @@
     "hdg lnk"
     "img txt"
     "img txt"
+    ".   txt"
     "btn txt";
   justify-content: center;
   align-items: baseline;
@@ -97,18 +98,15 @@
   text-align: center;
   transition: background-color 0.6s ease-out;
   margin: 0;
-}
-
-.hometowns__button:hover {
-  background: #0063d2;
-}
-
-.hometowns__button-link {
   text-decoration: none;
   margin: 0;
   justify-self: start;
   align-self: end;
   grid-area: btn;
+}
+
+.hometowns__button:hover {
+  background: #0063d2;
 }
 
 @media all and (max-width: 1000px) {
@@ -119,20 +117,20 @@
 
   .hometowns__article-long {
     grid-template-areas:
-    "hdg lnk"
-    "img txt"
-    "img txt"
-    ".   txt"
-    "btn txt"
-    ".   txt"
-    ".   txt";
+      "hdg lnk"
+      "img txt"
+      "img txt"
+      ".   txt"
+      "btn txt"
+      ".   txt"
+      ".   txt";
   }
 
   .hometowns__article-short {
-    grid-template-areas: 
-    "hdg lnk"
-    "img txt"
-    "btn txt";
+    grid-template-areas:
+      "hdg lnk"
+      "img txt"
+      "btn txt";
   }
 
   .hometowns__title {
@@ -149,7 +147,7 @@
     font-size: 16px;
   }
 
-  .hometowns__button-link-shortxt {
+  .hometowns__button-shortxt {
     grid-row: 2;
     align-self: flex-end;
   }
@@ -186,9 +184,6 @@
 
   .hometowns__button {
     padding: 13px 40px;
-  }
-
-  .hometowns__button-link {
     align-self: center;
     margin: 0;
   }
