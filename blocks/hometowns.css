@@ -22,7 +22,7 @@
     ".   txt"
     "btn txt";
   justify-content: center;
-  align-items: baseline;
+  
 }
 
 .hometowns__title {
@@ -69,6 +69,7 @@
   flex-direction: column;
   gap: 25px;
   grid-area: txt;
+  
 }
 
 .hometowns__img {
@@ -108,6 +109,11 @@
   background: #0063d2;
 }
 
+.hometowns__button-longtxt {
+  grid-row: 4;
+  margin-top: 46px;
+}
+
 @media all and (max-width: 1000px) {
   .hometowns {
     max-width: 100%;
@@ -123,6 +129,8 @@
       "btn txt"
       ".   txt"
       ".   txt";
+  grid-auto-rows: minmax(46px, 128px);
+
   }
 
   .hometowns__article-short {
