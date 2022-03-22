@@ -6,7 +6,7 @@
   justify-content: stretch;
   justify-items: center;
   max-width: 100%;
-  margin: 10% auto 7.75%;
+  margin: 118px auto 7.75%;
 }
 
 .gallery__img {
@@ -17,6 +17,8 @@
 @media all and (max-width: 1184px) {
   .gallery {
     grid-template-columns: repeat(2, minmax(352px, 1fr));
+    margin-top: 90px;
+    margin-bottom: 88px;
   }
 }
 
