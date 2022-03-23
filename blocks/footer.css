@@ -8,3 +8,7 @@
   color: #ffffff;
   margin-bottom: 24px;
 }
+
+.footer__signature {
+  all: inherit;
+}

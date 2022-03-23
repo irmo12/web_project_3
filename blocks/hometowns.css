@@ -14,15 +14,14 @@
   width: 100%;
   grid-gap: 0 40px;
   grid-template-columns: 1fr 1.05fr;
-  grid-auto-rows: minmax(46px, auto);
+  grid-auto-rows: minmax(0, auto);
   grid-template-areas:
     "hdg lnk"
     "img txt"
     "img txt"
-    ".   txt"
-    "btn txt";
+    "btn txt"
+    ". txt";
   justify-content: center;
-  
 }
 
 .hometowns__title {
@@ -69,12 +68,11 @@
   flex-direction: column;
   gap: 25px;
   grid-area: txt;
-  
 }
 
 .hometowns__img {
   object-fit: cover;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   grid-area: img;
 }
@@ -100,45 +98,21 @@
   transition: background-color 0.6s ease-out;
   margin: 0;
   text-decoration: none;
-    justify-self: start;
+  justify-self: start;
   align-self: end;
   grid-area: btn;
+  margin-top: 48px;
 }
 
 .hometowns__button:hover {
   background: #0063d2;
 }
 
-.hometowns__button-longtxt {
-  grid-row: 4;
-  margin-top: 46px;
-}
-
 @media all and (max-width: 1000px) {
   .hometowns {
     max-width: 100%;
     margin: 0 3%;
-  }
-
-  .hometowns__article-long {
-    grid-template-areas:
-      "hdg lnk"
-      "img txt"
-      "img txt"
-      ".   txt"
-      "btn txt"
-      ".   txt"
-      ".   txt";
-  grid-auto-rows: minmax(46px, 128px);
-
-  }
-
-  .hometowns__article-short {
-    grid-template-areas:
-      "hdg lnk"
-      "img txt"
-      "btn txt";
-    
+    gap: 73px;
   }
 
   .hometowns__title {
@@ -154,16 +128,15 @@
   .hometowns__paragraph {
     font-size: 16px;
   }
-
-  .hometowns__button-shortxt {
-    grid-row: 2;
-    align-self: flex-end;
-  }
 }
 
 @media all and (max-width: 700px) {
   .hometowns {
     margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 50px;
   }
 
   .hometowns__article {
