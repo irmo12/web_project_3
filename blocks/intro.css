@@ -64,13 +64,16 @@
 
 @media screen and (max-width: 755px)
 {
+  .intro{
+    max-width: calc(100% - 2*2.9%);
+  }
+
   .intro__heading,
   .intro__quote,
   .intro__cite,
   .intro__description {
-    margin: 0 2.9% 3.1%;
-    max-width: calc(100% - 2*2.9%);
-    width: 100%;
+   margin: 0 2.9%;
+   max-width: 100%;
   }
 
   .intro__heading {
@@ -79,33 +82,39 @@
   }
 }
 
-@media all and (max-width: 320px) {
-  .intro__cite,
-  .intro__description {
+@media all and (max-width: 370px) {
+  .intro {
     margin-left: 16px;
     margin-right: 16px;
+    max-width: 320px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .intro__cite,
+  .intro__description {
     width: 288px;
     max-width: 100%;
     
   }
 
+  .intro__cite {
+    margin-bottom: 32px;
+  }
+
   .intro__heading {
     font-size: 32px;
     line-height: 1.1;
-    margin-left: 16px;
-    margin-right: 16px;
-    width: 288px;
-    max-width: 100%;
+    margin-bottom: 40px;
   }
 
   .intro__quote {
     line-height: 1.25;
-    margin-left: 16px;
-    margin-right: 16px;
-    max-width: 288px;
-    max-width: 100%;
+    margin-bottom: 10px;
+  
   }
 }
+
 
 
 

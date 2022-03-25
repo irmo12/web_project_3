@@ -13,7 +13,7 @@
   display: grid;
   width: 100%;
   grid-gap: 0 40px;
-  grid-template-columns: 1fr 1.05fr;
+  grid-template-columns: 1fr 1.04fr;
   grid-auto-rows: minmax(0, auto);
   grid-template-areas:
     "hdg lnk"

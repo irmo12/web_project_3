@@ -1,21 +1,28 @@
 .cover {
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
   margin: 92px 0 92px;
+}
+
+.cover__img {
+  transition: opacity 0.6s ease-in-out;
+  background-image: url(../images/visit.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   max-width: 1184px;
-  height: 740px;
+  min-height: 740px;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-family: "Inter", Arial, sans-serif;
-  font-style: normal;
-  transition: opacity 0.6s ease-in-out;
 }
 
-.cover::before {
+.cover__img::before {
   content: "";
   display: block;
   position: absolute;
-  background-image: url(../images/visit.png);
+  background-color: #2a2c2f;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,7 +33,7 @@
   opacity: 0.3;
 }
 
-.cover:hover {
+.cover__img:hover {
   opacity: 0.8;
 }
 
@@ -89,8 +96,11 @@
 
 @media all and (max-width: 600px) {
   .cover {
-    height: 254px;
     margin: 64px 0;
+  }
+
+  .cover__img {
+    min-height: 254px;
   }
 
   .cover__content {
@@ -108,5 +118,4 @@
     line-height: 1.14;
     width: 56%;
   }
-
 }
