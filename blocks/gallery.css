@@ -39,13 +39,11 @@
     flex-wrap: nowrap;
     margin-top: 90px;
     margin-bottom: 89px;
-    
   }
 }
 @media all and (max-width: 320px) {
   .gallery {
     margin: 90px 16px 62px;
     row-gap: 12px;
-    
   }
 }
